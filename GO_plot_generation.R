@@ -65,7 +65,7 @@ trforestplot=function(filename) {
     
     trfname2=str_extract(filename,trfnamepattern)
     trfname2=sub('........_', '', trfname2)
-    trfname2=sub("^", "/Users/lainemarrah/Desktop/speciestRForestPlots/trf-", trfname2)
+    trfname2=sub("^", "/path/to/plots/folder/trf-", trfname2)
     trfname2=paste0(trfname2, "_plot.png")
     
     
@@ -82,7 +82,7 @@ trforestplot=function(filename) {
   
 }
 
-trforestspecies=list.files(path="/Users/lainemarrah/Desktop/speciesfiles", full.names=T)
+trforestspecies=list.files(path=/path/to/trforestoutputs/folder, full.names=T)
 
 for (f in trforestspecies){
   trforestplot(f)
