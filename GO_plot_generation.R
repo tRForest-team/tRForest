@@ -47,10 +47,13 @@ trforestplot=function(filename) {
     allplotmf=plot_grid(dotplotmf, goplotmf)+theme(plot.margin=margin(50,10,50,10))
     allplotcc=plot_grid(dotplotcc, goplotcc)+theme(plot.margin=margin(50,10,50,10))
     
-    trfnamepattern<-("profiles_....")
+    #depending on characters in tRF name, choose one of below
+    #trfnamepattern<-("profiles_....")
+    #trfnamepattern<-("profiles_.....")
+    
     trfname=str_extract(filename,trfnamepattern)
     trfname=sub('........_', '', trfname)
-    trfname=sub("^", "Species trf-", trfname)
+    trfname=sub("^", "Species tRF-", trfname)
     trfname=paste0(trfname, " Ontology Analysis")
     
     trflabel<- ggdraw() + 
@@ -73,10 +76,13 @@ trforestplot=function(filename) {
   }
   
   else {
-    trfnamepattern<-("profiles_....")
+    #depending on characters in tRF name, choose one of below
+    #trfnamepattern<-("profiles_....")
+    #trfnamepattern<-("profiles_.....")
+    
     trfname=str_extract(filename,trfnamepattern)
     trfname=sub('........_', '', trfname)
-    trfname=sub("^", "Insufficient genes for trf-", trfname)
+    trfname=sub("^", "Insufficient genes for tRF-", trfname)
     print(trfname)
   }
   
