@@ -1,7 +1,7 @@
 library(dplyr)
 library(BiocManager)
 library(clusterProfiler)
-library(speciesorgdb) 
+library(speciesorgdb) # NOTE: replace all "speciesorgdb" with the species-specific genome-wide annotation (eg. org.Hs.eg.db)
 library(stringr)
 library(cowplot)
 library(ggplot2)
