@@ -5,8 +5,8 @@
 
 
 # Load models
-model = joblib.load("/Users/RohanParikh/Google Drive/Dutta Lab/random forests/tRForest_kfold.joblib")
-model_split = joblib.load("/Users/RohanParikh/Google Drive/Dutta Lab/random forests/tRForest_split.joblib")
+model = joblib.load("/path/to/tRForest_kfold.joblib")
+model_split = joblib.load("/path/to/tRForest_split.joblib")
 
 # Set paths and get filenames in relevant directory
 from os import walk
