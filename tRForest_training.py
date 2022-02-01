@@ -92,6 +92,6 @@ print("   Recall: " + str(round(np.mean(np.array([recall_0, recall_1])), 4)))
 print(" F1 Score: " + str(round(np.mean(np.array([f1score_0, f1score_1])), 4)))
 
 # Save models
-joblib.dump(model, "/Users/RohanParikh/Google Drive/Dutta Lab/random forests/tRForest_kfold.joblib")
-joblib.dump(model_split, "/Users/RohanParikh/Google Drive/Dutta Lab/random forests/tRForest_split.joblib")
+joblib.dump(model, "tRForest_kfold.joblib")
+joblib.dump(model_split, "tRForest_split.joblib")
 
