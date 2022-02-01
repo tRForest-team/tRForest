@@ -21,7 +21,7 @@ trforestplot=function(filename) {
     
     fulloutput=merge(trforestinput, entrezoutput, by="gene_name")
     fulloutput=distinct(fulloutput)
-    entrezvector=fulloutput[,24]
+    entrezvector=fulloutput$entrez_id
     entrezvector=na.omit(entrezvector)
     entrezvector=unique(entrezvector)
     
