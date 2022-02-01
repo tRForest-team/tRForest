@@ -47,6 +47,3 @@ Feedback and/or questions can also be submitted to https://trforest.com/html/fee
 * Dr. Anindya Dutta
 <!--  * Chair, Department of Genetics
   * University of Alabama-Birmingham School of Medicine -->
-
-
-* How users can get started with the project.
