@@ -6,7 +6,7 @@ Explore machine-learning predicted targets for transfer RNA-related fragments (t
 
 ## Overview of Code Files
 
-* `initial_processing.R` processes the raw tRF and gene information files for a given species by extracting unique tRF sequences, determining binding energy cutoff values, and filtering the genes to remove those without sequencing data or with short sequences.
+* `initial_processing.R` processes the raw tRF and gene information files for a given species by extracting unique tRF sequences, determining binding energy cutoff values, and filtering the genes to remove those without sequencing data or with short sequences
 * `feature_calculation.R` calculates the tRF-mRNA feature profiles for a given tRF with two passes first filtering for seed matching and binding energy
 * `negative_sites.R` generates corresponding negative sites for each ground-truth positive site given in the CLASH data by scanning the 3' UTR at non-target sites and identifying locations with similar motifs to target sites
 * `phylop_scores.md` describes how to retrieve, map, and obtain evolutionary conservation information via phyloP scores
